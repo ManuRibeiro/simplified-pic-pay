@@ -1,4 +1,4 @@
-package com.picpaychallenge.simplifiedpicpay.model;
+package com.picpaychallenge.simplifiedpicpay.model.User;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
