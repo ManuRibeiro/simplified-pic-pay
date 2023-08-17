@@ -21,11 +21,15 @@ public class User {
     private String firstName;
 
     private String lastName;
+
     @Column(unique = true)
     private String document;
+
     @Column(unique = true)
     private String email;
+
     private String password;
+
     private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)
