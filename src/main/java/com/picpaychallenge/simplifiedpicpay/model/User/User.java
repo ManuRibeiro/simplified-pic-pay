@@ -1,5 +1,6 @@
 package com.picpaychallenge.simplifiedpicpay.model.User;
 
+import com.picpaychallenge.simplifiedpicpay.dtos.UserDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -35,4 +36,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserType userType;
 
+    public User(UserDTO user) {
+        this.firstName = user.firstName();
+        this.lastName = user.lastName();
+        this.balance = user.balance();
+        this.userType = user.userType();
+        this.password = user.password();
+        this.document = user.document();
+        this.email = user.email();
+    }
 }
